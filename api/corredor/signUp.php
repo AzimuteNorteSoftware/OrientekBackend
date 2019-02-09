@@ -48,7 +48,7 @@ function validaCPF($cpf) {
         $cpf == '99999999999') {
         $response['data'] = "<span class='red-text'>ERRO: </span><span>Esse CPF não existe(12)</span>" . $cpf;
         return false;
-        /*
+        /**
          *  Calcula os digitos verificadores para verificar se o
          *  CPF é válido
         */

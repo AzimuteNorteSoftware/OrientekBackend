@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d88a760a-ec03-48ed-8056-d03513db9acd" name="Default" comment="" />
+    <list default="true" id="d88a760a-ec03-48ed-8056-d03513db9acd" name="Default" comment="Adicionados mais dados nas buscas por evento para orientista.">
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/corredor/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/corredor/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/corredor/eventos.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/corredor/eventos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/corredor/signUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/corredor/signUp.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +47,6 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="sistema_oriente: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="evento: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sistema_oriente: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="participacao: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -57,60 +57,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sync/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sync/upload.php">
+        <entry file="file://$PROJECT_DIR$/api/corredor/eventos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1588">
-              <caret line="190" column="49" selection-start-line="190" selection-start-column="49" selection-end-line="190" selection-end-column="49" />
-              <folding>
-                <element signature="n#fetch#0;n#Upload#0;n#!!top" />
-                <element signature="n#getEndereco#0;n#Upload#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="549">
+              <caret line="180" column="52" selection-start-line="180" selection-start-column="52" selection-end-line="180" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sync/api/buscaEstados.php">
+        <entry file="file://$PROJECT_DIR$/api/corredor/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="625">
+              <caret line="89" column="42" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sync/api/buscaClubes.php">
+        <entry file="file://$PROJECT_DIR$/api/corredor/signUp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sync/api/clube/eventos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="112" column="223" selection-start-line="112" selection-start-column="223" selection-end-line="112" selection-end-column="223" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://36482d39-09dd-47f0-a8e4-4da42d06b12f/schema/sistema_oriente/table/evento">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="855">
+              <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -149,6 +118,7 @@
       <find>echo</find>
       <find>INSERT INTO</find>
       <find>UPDATE sistema_oriente.clube</find>
+      <find>isset(</find>
     </findStrings>
     <replaceStrings>
       <replace>$_POST</replace>
@@ -158,13 +128,12 @@
       <replace>$db-&gt;conn-&gt;insert_id</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public_html/js/script.js" />
-        <option value="$PROJECT_DIR$/public_html/clubes/getClube.php" />
-        <option value="$PROJECT_DIR$/sync/indexed-db.js" />
-        <option value="$PROJECT_DIR$/public_html/controls/clubes/valida_sessao.php" />
         <option value="$PROJECT_DIR$/public_html/orientistas/lista_evento.php" />
         <option value="$PROJECT_DIR$/public_html/clubes/detalhe_evento.php" />
         <option value="$PROJECT_DIR$/public_html/orientistas/desempenho.php" />
@@ -212,6 +181,10 @@
         <option value="$PROJECT_DIR$/sync/config.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/sync/api/clube/eventos.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/api/corredor/auth.php" />
+        <option value="$PROJECT_DIR$/api/corredor/signUp.php" />
+        <option value="$PROJECT_DIR$/api/corredor/eventos.php" />
       </list>
     </option>
   </component>
@@ -223,6 +196,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1033" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -239,12 +213,17 @@
             <path>
               <item name="Orientek" type="b2602c69:ProjectViewProjectNode" />
               <item name="Orientek" type="462c0819:PsiDirectoryNode" />
-              <item name="sync" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Orientek" type="b2602c69:ProjectViewProjectNode" />
               <item name="Orientek" type="462c0819:PsiDirectoryNode" />
-              <item name="sync" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="corredor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Orientek" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Orientek" type="462c0819:PsiDirectoryNode" />
               <item name="testes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -452,11 +431,15 @@
       <workItem from="1549307105681" duration="5186000" />
       <workItem from="1549353259822" duration="12467000" />
       <workItem from="1549452753385" duration="13119000" />
+      <workItem from="1549629652038" duration="248000" />
+      <workItem from="1549647294624" duration="4178000" />
+      <workItem from="1549709366288" duration="6061000" />
+      <workItem from="1549743323743" duration="1244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="523289000" />
+    <option name="totallyTimeSpent" value="535020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,8 +452,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1033" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49562684" visible="true" weight="0.20118026" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49562684" visible="true" weight="0.1668455" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5043732" side_tool="true" weight="0.14554243" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -484,14 +468,14 @@
       <window_info anchor="bottom" id="PHP-CGI Server" order="8" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32849163" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32960895" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3605442" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32879817" />
       <window_info active="true" anchor="bottom" id="CSS Styles" order="14" visible="true" weight="0.32897604" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.2725322" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.17435622" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49562684" visible="true" weight="0.18113612" />
@@ -525,52 +509,15 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sync/upload.php</url>
-          <line>122</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/api/corredor/eventos.php</url>
+          <line>210</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public_html/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" lean-forward="true" selection-start-column="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/clubes/cadastro-eventos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/clubes/css/logado.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/clubes/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/clubes/get_comprovante.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/controls/clubes/valida_sessao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="55" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/controls/clubes/valida_sessao.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -578,123 +525,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/clubes/detalhe_evento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/clubes/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="105" column="43" lean-forward="true" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="e#153#161#0" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="e#6#14#0" expanded="true" />
-            <element signature="e#14#22#0" expanded="true" />
-            <element signature="e#88#96#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/css/form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/clubes/js/indexed-db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/testes/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/clubes/js/services/database-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/clubes/js/cadastro-evento.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/testes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="85" column="6" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/orientistas/lista_evento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="173" column="14" lean-forward="true" selection-start-line="173" selection-start-column="14" selection-end-line="173" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/controls/eventos/pesquisa-eventos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/orientistas/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/eventos/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="98" column="17" lean-forward="true" selection-start-line="98" selection-start-column="17" selection-end-line="98" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/clubes/detalhe_evento.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/clubes/login.html" />
+    <entry file="file://$PROJECT_DIR$/public_html/css/form.css" />
+    <entry file="file://$PROJECT_DIR$/public_html/clubes/js/indexed-db.js" />
+    <entry file="file://$PROJECT_DIR$/sync/testes/index.html" />
+    <entry file="file://$PROJECT_DIR$/public_html/clubes/js/services/database-service.js" />
+    <entry file="file://$PROJECT_DIR$/public_html/clubes/js/cadastro-evento.js" />
+    <entry file="file://$PROJECT_DIR$/sync/testes/index.js" />
+    <entry file="file://$PROJECT_DIR$/public_html/orientistas/lista_evento.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/controls/eventos/pesquisa-eventos.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/orientistas/main.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/eventos/index.php" />
     <entry file="das://36482d39-09dd-47f0-a8e4-4da42d06b12f/schema/sistema_oriente/table/corredor" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36482d39-09dd-47f0-a8e4-4da42d06b12f/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/eventos/participar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="15" column="222" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="222" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/eventos/participar.php" />
     <entry file="file://$PROJECT_DIR$/sync/api/corredor/comprovantes/wallpaper.png" />
-    <entry file="file://$PROJECT_DIR$/public_html/orientistas/salva_comprovante.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/orientistas/salva_comprovante.php" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36482d39-09dd-47f0-a8e4-4da42d06b12f/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -702,101 +551,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/orientistas/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="e#153#161#0" expanded="true" />
-            <element signature="e#6#14#0" expanded="true" />
-            <element signature="e#14#22#0" expanded="true" />
-            <element signature="e#88#96#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/controls/seleciona-cidade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/controls/cadastro_orientistas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="178" column="28" lean-forward="true" selection-start-line="8" selection-end-line="178" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/orientistas/cadastro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="120" column="25" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="120" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/clubes/cadastro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="23" selection-start-line="23" selection-end-line="155" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/controls/cadastro_clubes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="20" column="43" lean-forward="true" selection-end-line="135" selection-end-column="2" />
-          <folding>
-            <element signature="e#43#51#0" expanded="true" />
-            <element signature="e#53#61#0" expanded="true" />
-            <element signature="e#59#67#0" expanded="true" />
-            <element signature="e#76#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/api/corredor/signUp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="e#56#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/api/buscaCidade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/api/clube/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/api/corredor/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/api/corredor/eventos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="175" column="10" selection-start-line="175" selection-start-column="10" selection-end-line="175" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/orientistas/index.html" />
+    <entry file="file://$PROJECT_DIR$/public_html/controls/seleciona-cidade.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/controls/cadastro_orientistas.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/orientistas/cadastro.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/clubes/cadastro.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/controls/cadastro_clubes.php" />
+    <entry file="file://$PROJECT_DIR$/sync/api/corredor/signUp.php" />
+    <entry file="file://$PROJECT_DIR$/sync/api/buscaCidade.php" />
+    <entry file="file://$PROJECT_DIR$/sync/api/clube/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/sync/api/corredor/auth.php" />
+    <entry file="file://$PROJECT_DIR$/sync/api/corredor/eventos.php" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36482d39-09dd-47f0-a8e4-4da42d06b12f/console_2.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -811,58 +576,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sync/api/corredor/.htaccess">
+    <entry file="file://$PROJECT_DIR$/sync/api/corredor/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/sync/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/sync/api/clube/sync.php" />
+    <entry file="file://$PROJECT_DIR$/sync/api/clube/signUp.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/controls/eventos/cadastra-eventos.php" />
+    <entry file="file://$PROJECT_DIR$/sync/auth.php" />
+    <entry file="file://$PROJECT_DIR$/sync/config.php" />
+    <entry file="file://$PROJECT_DIR$/sync/api/buscaEstados.php" />
+    <entry file="file://$PROJECT_DIR$/sync/api/buscaClubes.php" />
+    <entry file="file://$PROJECT_DIR$/sync/api/clube/eventos.php" />
+    <entry file="file://$PROJECT_DIR$/sync/upload.php" />
+    <entry file="das://36482d39-09dd-47f0-a8e4-4da42d06b12f/schema/sistema_oriente/table/evento">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="1" selection-end-column="61" />
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sync/.htaccess">
+    <entry file="file://$PROJECT_DIR$/api/corredor/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sync/api/clube/sync.php">
+    <entry file="file://$PROJECT_DIR$/api/corredor/signUp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="855">
+          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sync/api/clube/signUp.php">
+    <entry file="file://$PROJECT_DIR$/api/corredor/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="80" column="71" selection-start-line="80" selection-start-column="71" selection-end-line="80" selection-end-column="71" />
-          <folding>
-            <element signature="e#43#51#0" expanded="true" />
-            <element signature="e#53#61#0" expanded="true" />
-            <element signature="e#59#67#0" expanded="true" />
-            <element signature="e#76#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/controls/eventos/cadastra-eventos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="625">
+          <caret line="89" column="42" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -873,42 +629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sync/api/clube/eventos.php">
+    <entry file="file://$PROJECT_DIR$/api/corredor/eventos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="112" column="223" selection-start-line="112" selection-start-column="223" selection-end-line="112" selection-end-column="223" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://36482d39-09dd-47f0-a8e4-4da42d06b12f/schema/sistema_oriente/table/evento">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/api/buscaClubes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/api/buscaEstados.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sync/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1588">
-          <caret line="190" column="49" selection-start-line="190" selection-start-column="49" selection-end-line="190" selection-end-column="49" />
-          <folding>
-            <element signature="n#fetch#0;n#Upload#0;n#!!top" />
-            <element signature="n#getEndereco#0;n#Upload#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="549">
+          <caret line="180" column="52" selection-start-line="180" selection-start-column="52" selection-end-line="180" selection-end-column="52" />
         </state>
       </provider>
     </entry>
