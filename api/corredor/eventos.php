@@ -51,12 +51,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
             $res = $res->fetch_assoc();
             $expiration = $res['tokenExpiration'];
             if (strtotime($expiration) > time()) {
+                echo "token {$_SERVER['HTTP_AUTHORIZATION']} expired";
                 http_response_code(401);
                 exit;
             } else {
                 $UId = $res['idCorredor'];
             }
         } else {
+            echo "token {$_SERVER['HTTP_AUTHORIZATION']} dont existis";
             http_response_code(401);
         }
     } else {
@@ -220,17 +222,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
             }
             $r = true;
 
+        } else if (isset($data['participacao'])) {
+            $query = "UPDATE sistema_oriente.participacao SET pagoParticipacao=1 WHERE idParticipa={$data['participacao']}";
+            if ($db->executeUpdate($query, $UId)) {
+                $r = true;
+            } else {
+                $r = false;
+                echo $db->error();
+            }
+            // TODO APROVAR PARTICIPACAO
         } else if (isset($_FILES['file'])) {
             // TODO Verfificar integridade e segurança do arquivo
             $fileName = $_FILES['file']['name'];
             $ext = @end(explode('.', $fileName));
             $uniqueName = rand(100, 999) . '_' . time();
-            $uploadDir = './comprovantes/';
+            $uploadDir = 'comprovantes/';
             // Nome = diretorio/ timestamp do upload _ Numero de 3 digitos aleatório. extensão
             $newfilename = $uploadDir . $uniqueName . '.' . $ext;
 
             if (move_uploaded_file($_FILES['file']['tmp_name'], $newfilename)) {
-                $sql = $db->query('UPDATE sistema_oriente.participacao SET pagoParticipacao=1 comprovante = "' . $newfilename . '" WHERE idCorredor= ' . $UId . ' and idEvento=' . $_POST['evento'] . ';');
+                $sql = $db->query("UPDATE sistema_oriente.participacao SET pagoParticipacao=1, comprovante='$newfilename' WHERE idCorredor=$UId  and idEvento= {$_POST['evento']} ;");
                 echo $db->error();
                 if ($sql) {
                     $r = true;
@@ -243,6 +254,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
         }
         echo '{"ok": ' . $r . '}';
-
     }
 }

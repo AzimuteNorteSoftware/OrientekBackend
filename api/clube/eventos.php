@@ -8,7 +8,7 @@
 include_once('../../config.php');
 
 header('Access-Control-Allow-Origin: "*"');
-header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+header('Access-Control-Allow-Methods: PUT, POST, GET, OPTIONS');
 header('Access-Control-Allow-Headers: access-control-allow-origin, Authorization, content-type');
 header('Access-Control-Max-Age: 1');
 
@@ -62,8 +62,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $response = array('success' => false, 'data' => '');
 
     if (!empty($_POST['nomeEvento']) && !empty($_POST['precoEvento']) && !empty($_POST['horarioEvento']) && !empty($_POST['dataEvento']) && !empty($_POST['inscricaoEvento']) && !empty($_POST['pagamentoEvento']) && !empty($_POST['rua']) && !empty($_POST['numeroEndereco']) && !empty($_POST['bairro']) && !empty($_POST['cidade']) && !empty($_POST['estado']) && !empty($_POST['cep'])) {
-
-
         $nomeEvento = htmlentities($_POST['nomeEvento']);
         $precoEvento = str_replace(",", ".", $_POST['precoEvento']);
         $precoEvento = preg_replace('/[^0-9\.]/', '', $precoEvento);
@@ -141,12 +139,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
     } else {
-        $response['data'] = '<span class="red-text">ERRO:</span> Todos os campos são obrigatórios'.var_dump($_POST);
+        $response['data'] = '<span class="red-text">ERRO:</span> Todos os campos são obrigatórios' . var_dump($_POST);
     }
     echo json_encode($response);
+} else if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
+    header('Content-Type: application/json');
+    $r = false;
+    $data = json_decode(file_get_contents('php://input'), true);
+    if (isset($data['participacao'])) {
+        $query = "UPDATE sistema_oriente.participacao SET pagoParticipacao=1 WHERE idParticipa={$data['participacao']}";
+        if ($db->executeUpdate($query, $UId)) {
+            $r = true;
+        } else {
+            $r = false;
+            echo $db->error();
+        }
+        // TODO Enviar email ou notificação avisando o corredor
+    } else {
+        var_dump($data);
+        http_response_code(400);
+    }
+    echo '{"ok": ' . $r . '}';
+    exit(0);
+
 } else if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (isset($_GET['id'])) {
-        // TODO RETORNAR EVENTO POR ID PARA CLUBE
         if (isset($_GET['participacoes'])) {
             $queryParticipacoes = "SELECT * FROM sistema_oriente.participacao WHERE idEvento={$_GET['id']}";
             $queryCorredores = "SELECT 
@@ -181,12 +198,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         echo json_encode($r);
     }
-} else if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
-    //TODO inserir dados do evento no banco de dadods
-
 } else if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 } else {
     //bad request
+    var_dump($_SERVER);
     http_response_code(400);
 }
